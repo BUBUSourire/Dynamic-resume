@@ -3,14 +3,9 @@ let result = `/*
 *毕业于xxx，学习旅游管理（会展）专业
 */
 
-.token.punctuation {
-    color:#fff !important;
-}
-
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     transition: all 1s;
 }
 
@@ -19,15 +14,27 @@ let result = `/*
 }
 
 body {
-    padding:10px;
-    background: #F4F4FE;
-    border: 1px solid rgba(255,255,255,1) 0.3;
     width: 50%;
+    background: #F4F4FE;
     height: 100vh;
-    font-size: 16px;
-    box-shadow: 9px -1px 28px -14px rgba(23,23,23,1);
+    font-size: 15px;
 }
-
+/*加点效果*/
+html {
+    perspective: 1000px;
+}
+#code {
+    width:40%;
+    margin:10px;
+    padding:10px;
+    position:fixed;
+    left:0;
+    top:0;
+    border: 1px solid rgba(255,255,255,1);
+    box-shadow: 9px -1px 28px -14px rgba(23,23,23,1);
+    transform: rotateY(10deg) translateZ(-100px);
+   
+}
 
 
 
