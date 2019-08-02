@@ -11,14 +11,16 @@ let result = `/*
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    transition:all 1s;
+    transition: all 1s;
 }
 
-
+.token.property {
+    color: #0A4A42;
+}
 
 body {
     padding:10px;
-    background: #32A7B8;
+    background: #F4F4FE;
     border: 1px solid rgba(255,255,255,1) 0.3;
     width: 50%;
     height: 100vh;
@@ -39,7 +41,7 @@ let timeId = setInterval(() => {
     let domCode = document.querySelector('#code')
     n += 1
     domCode.innerHTML = result.substring(0, n)
-    domCode.innerHTML=Prism.highlight(domCode.innerHTML, Prism.languages.css, 'css');
+    domCode.innerHTML = Prism.highlight(domCode.innerHTML, Prism.languages.css, 'css');
     styleCode.innerHTML = result.substring(0, n)
     if (n >= result.length) {
         clearInterval(timeId)
