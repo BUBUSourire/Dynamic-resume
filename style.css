@@ -1,0 +1,14 @@
+.markdown-body {
+    width:100%;
+    padding:20px;
+}
+.markdown-body>table{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-collapse: collapse;
+    font-size:14px;
+}
+.markdown-body>table tr {
+    margin:10px;
+}
