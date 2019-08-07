@@ -17,7 +17,7 @@ function writeCode(prefix, code, fn) {
 
 let result = `/*
 *你好，我叫xxx，来自江苏泰州
-*毕业于xxx，学习旅游管理（会展）专业
+*毕业于xxx
 */
 
 // .token.property {
